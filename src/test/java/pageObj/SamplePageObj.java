@@ -55,8 +55,9 @@ public class SamplePageObj {
 		try {
 			Thread.sleep(2000);
 		//click profile picture
-		androidDriver.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]")).click();
+		androidDriver.findElement(By.xpath("//android.widget.ImageView[@content-desc=\"home_prof_pic_id\"]")).click();
 		System.out.println("Profile pic clicked");
+		Thread.sleep(2000);
 		//Click logou option
 		androidDriver.findElement(By.xpath("//android.widget.TextView[@text=\"Log Out\"]")).click();
 		
