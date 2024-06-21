@@ -16,7 +16,14 @@ public class SamplePageObj {
 	}
 
 	public void openApp() {
-		androidDriver.findElement(AppiumBy.accessibilityId("Docisn")).click();
+		try {
+			Thread.sleep(5000);
+			androidDriver.findElement(AppiumBy.accessibilityId("Docisn")).click();
+			Thread.sleep(2000);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
 	}
 
@@ -31,13 +38,34 @@ public class SamplePageObj {
 	}
 
 	public void clickLoginButton() {
-		androidDriver.findElement(By.xpath("//android.widget.TextView[@text=\"Sign In\"]")).click();
-		
+		try{
+			androidDriver.findElement(By.xpath("//android.widget.TextView[@text=\"Sign In\"]")).click();
+			Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
-	
-	
-	
-	
-	
+
+	public void selectUser() {
+		androidDriver.findElement(By.xpath("(//android.widget.ImageView[@content-desc=\"home_prof_pic_id\"])[1]")).click();		
+	}
+
+	public void logsOut() {
+		try {
+			Thread.sleep(2000);
+		//click profile picture
+		androidDriver.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]")).click();
+		System.out.println("Profile pic clicked");
+		//Click logou option
+		androidDriver.findElement(By.xpath("//android.widget.TextView[@text=\"Log Out\"]")).click();
+		
+		//click logout
+		androidDriver.findElement(By.xpath("//android.widget.Button[@resource-id=\"android:id/button2\"]")).click();
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+	}	
 
 }

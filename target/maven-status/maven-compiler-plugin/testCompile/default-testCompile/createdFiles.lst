@@ -1,4 +1,5 @@
 pageObj\SamplePageObj.class
+utils\Helper.class
 stepDef\SampleStep.class
 baseclass\AppBase.class
 runner\AppRunner.class
