@@ -17,7 +17,7 @@ public class SamplePageObj {
 
 	public void openApp() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(7000);
 			androidDriver.findElement(AppiumBy.accessibilityId("Docisn")).click();
 			Thread.sleep(2000);
 			
@@ -62,6 +62,7 @@ public class SamplePageObj {
 		androidDriver.findElement(By.xpath("//android.widget.TextView[@text=\"Log Out\"]")).click();
 		
 		//click logout
+		Thread.sleep(2000);
 		androidDriver.findElement(By.xpath("//android.widget.Button[@resource-id=\"android:id/button2\"]")).click();
 		}
 		catch (Exception e) {
