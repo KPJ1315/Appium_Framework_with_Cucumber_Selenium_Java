@@ -1,15 +1,25 @@
 package pageObj;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
+
 
 public class SamplePageObj {
 	AndroidDriver androidDriver;
 	
+	
+	@AndroidFindBy(accessibility = "Docisn")
+	WebElement clickApp;
 	public SamplePageObj(AndroidDriver androidDriver) {
 		this.androidDriver = androidDriver;
 		PageFactory.initElements(new AppiumFieldDecorator(androidDriver), this);
@@ -18,9 +28,9 @@ public class SamplePageObj {
 	public void openApp() {
 		try {
 			Thread.sleep(7000);
-			androidDriver.findElement(AppiumBy.accessibilityId("Docisn")).click();
-			Thread.sleep(2000);
-			
+//			androidDriver.findElement(AppiumBy.accessibilityId("Docisn")).click();
+			clickApp.click();
+			Thread.sleep(2000);// to wait for the app to be clicked and open			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
@@ -64,6 +74,7 @@ public class SamplePageObj {
 		//click logout
 		Thread.sleep(2000);
 		androidDriver.findElement(By.xpath("//android.widget.Button[@resource-id=\"android:id/button2\"]")).click();
+		androidDriver.pressKey(new KeyEvent(AndroidKey.HOME));
 		}
 		catch (Exception e) {
 			// TODO: handle exception

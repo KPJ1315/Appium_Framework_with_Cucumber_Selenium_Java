@@ -23,9 +23,8 @@ public class SampleStep {
 	public void setUp() throws MalformedURLException {
 		try {
 			baseClass.startEmulator();
-			Thread.sleep(25000);
 			baseClass.startAppiumServer();
-			Thread.sleep(5000);
+			Thread.sleep(000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
