@@ -34,21 +34,52 @@ public class AppBase {
     public void initializeDriver() {
         try {
             UiAutomator2Options capabilities = new UiAutomator2Options();
-            capabilities.setCapability("deviceName", "R52W409CCYF");
-            capabilities.setCapability("platformVersion", "14.0");
+//            capabilities.setCapability("deviceName", "R52W409CCYF");
+            capabilities.setCapability("deviceName", "Pixel_7_Pro_API_31");
+            capabilities.setCapability("platformVersion", "12.0");
+//            capabilities.setCapability("platformVersion", "14.0");
             capabilities.setCapability("noReset", true);
-            capabilities.setCapability("appPackage", "com.aciana.docisn");
-            capabilities.setCapability("appActivity", "com.aciana.docisn.MainActivity");
+//            capabilities.setCapability("appPackage", "com.aciana.docisn");
+//            capabilities.setCapability("appActivity", "com.aciana.docisn.MainActivity");
             capabilities.setCapability("automationName", "UiAutomator2");
             capabilities.setCapability("platformName", "Android");
             capabilities.setCapability("newCommandTimeout", 60);
             capabilities.setCapability("appium:appiumVersion", "2.10.3");
 
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities);
+            
+            
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
     }
+    
+    
+    public void startEmulator() {
+        try {
+            String androidSdkPath = "C:\\Users\\Archents\\AppData\\Local\\Android\\Sdk";
+            String emulatorName = "Pixel_7_Pro_API_31";
+            ProcessBuilder processBuilder = new ProcessBuilder(androidSdkPath + "/emulator/emulator", "-avd", emulatorName);
+            Process process = processBuilder.start();
+            System.out.println("Emulator launched");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+//    	    try {
+//    	        Thread.sleep(3000);
+//    	        String androidSdkPath = "C:\\Users\\Archents\\AppData\\Local\\Android\\Sdk";
+//    	        String emulatorName = "Pixel_7_Pro_API_31";
+//
+//    	        ProcessBuilder processBuilder = new ProcessBuilder(androidSdkPath + "/emulator/emulator", "-avd", emulatorName);
+//    	        Process process = processBuilder.start();
+//    	        Thread.sleep(20000);
+//    	        System.out.println("Emulator launched");
+//    	    } catch (Exception e) {
+//    	        e.printStackTrace();
+//    	    }
+//    	}
+//    }
 
     public AndroidDriver getDriver() {
         return driver;
