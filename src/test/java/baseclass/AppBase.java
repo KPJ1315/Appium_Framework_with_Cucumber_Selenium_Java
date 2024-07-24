@@ -35,10 +35,10 @@ public class AppBase {
 	public void initializeDriver() {
 		try {
 			UiAutomator2Options capabilities = new UiAutomator2Options();
-			//            capabilities.setCapability("deviceName", "R52W409CCYF");
-			capabilities.setCapability("deviceName", "Pixel_7_Pro_API_31");
-			capabilities.setCapability("platformVersion", "12.0");
-			//            capabilities.setCapability("platformVersion", "14.0");
+			            capabilities.setCapability("deviceName", "R52W409CCYF");
+//			capabilities.setCapability("deviceName", "Pixel_7_Pro_API_31");
+//			capabilities.setCapability("platformVersion", "12.0");
+			            capabilities.setCapability("platformVersion", "14.0");
 			capabilities.setCapability("noReset", true);
 			//            capabilities.setCapability("appPackage", "com.aciana.docisn");
 			//            capabilities.setCapability("appActivity", "com.aciana.docisn.MainActivity");
@@ -47,7 +47,7 @@ public class AppBase {
 			capabilities.setCapability("newCommandTimeout", 60);
 			capabilities.setCapability("skipUnlock", true);
 //			capabilities.setAvdReadyTimeout(Duration.ofSeconds(60000)); // to wait for the emulator to be ready or opened properly or boot up
-			capabilities.setCapability("appium:appiumVersion", "2.10.3");
+			capabilities.setCapability("appium:appiumVersion", "2.11.1");
 
 			driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities);
 
@@ -63,7 +63,9 @@ public class AppBase {
 			String androidSdkPath = "C:\\Users\\Archents\\AppData\\Local\\Android\\Sdk";
 			String emulatorName = "Pixel_7_Pro_API_31";
 			ProcessBuilder processBuilder = new ProcessBuilder(androidSdkPath + "/emulator/emulator", "-avd", emulatorName);
-			processBuilder.start();			
+			processBuilder.start();	
+			System.out.println("Waiting for 5 seconds to launch emulator");
+			Thread.sleep(5000);
 			System.out.println("Emulator launched");
 		} catch (Exception e) {
 			e.printStackTrace();

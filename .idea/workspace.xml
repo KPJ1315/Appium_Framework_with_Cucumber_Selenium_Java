@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d83cae6f-a6e0-409e-89e1-6119bb21ecff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseclass/AppBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseclass/AppBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObj/SamplePageObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObj/SamplePageObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/SampleStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/SampleStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Sample.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Sample.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppiumAutomation-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppiumAutomation-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.cucumber/cucumber.glue.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.cucumber/cucumber.stepDefinitions.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/AppiumAutomation/AppiumAutomation/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/AppiumAutomation/AppiumAutomation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/Cucumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/report-feature_1276292581.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/report-feature_1276292581.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/report-tag_2149503562.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-html-reports/report-tag_2149503562.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.AppRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.AppRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runner.AppRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runner.AppRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/Sample.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/Sample.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/baseclass/AppBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/baseclass/AppBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObj/SamplePageObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObj/SamplePageObj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/AppRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/AppRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDef/SampleStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDef/SampleStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Helper.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KPJ1315"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KPJ1315/Appium_Framework_with_Cucumber_Selenium_Java.git",
+    "accountId": "c5450bdf-e2f0-4c7a-937c-08db50199135"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2isKBBZBCAmajUypV2xgc29465n" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Scenario: Search for speciality in top speciality section of consultation in patient app.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "kpjmaster",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Archents/Desktop/Docs/AppiumAutomation"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Scenario: Search for speciality in top speciality section of consultation in patient app" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Sample.feature" />
+      <option name="GLUE" value="baseclass stepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AppiumAutomation" />
+      <option name="NAME_FILTER" value="^Search for speciality in top speciality section of consultation in patient app$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for speciality in top speciality section of consultation in patient app$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search for speciality in top speciality section of consultation in patient app" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Search for speciality in top speciality section of consultation in patient app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d83cae6f-a6e0-409e-89e1-6119bb21ecff" name="Changes" comment="" />
+      <created>1720273706557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720273706557</updated>
+    </task>
+    <servers />
+  </component>
+</project>
