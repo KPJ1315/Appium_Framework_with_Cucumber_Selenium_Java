@@ -8,8 +8,9 @@ Feature:
     When User selects a app user, dashboard is displayed
 
   @TC1
-  Scenario: User is logs in and logs out of patient app
+  Scenario: User logs in and logs out of patient app
   Then User logsout of the app
+  
   @TC2
   Scenario: Search for speciality in top speciality section of consultation in patient app
     And User clicks consultation

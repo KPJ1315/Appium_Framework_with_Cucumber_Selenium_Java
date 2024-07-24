@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,15 +24,15 @@ public class SamplePageObj {
 	String str ="Speciality";
 
 	WebDriverWait wait;
-
+	
 	@AndroidFindBy(accessibility = "Docisn")
 	WebElement clickApp;
 	public SamplePageObj(AndroidDriver androidDriver) {
 		this.androidDriver = androidDriver;
 		PageFactory.initElements(new AppiumFieldDecorator(androidDriver), this);
 		wait = new WebDriverWait(androidDriver, Duration.ofSeconds(30));
-	}
-
+	}	
+	
 	public void openApp() {
 		try {
 			Thread.sleep(9000);
@@ -79,7 +80,7 @@ public class SamplePageObj {
 
 	public void logsOut() {
 		try {
-//			Thread.sleep(2000);
+			Thread.sleep(2000);
 			//click profile picture
 			WebElement profilePic = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ImageView[@content-desc=\"home_prof_pic_id\"]")));	
 			profilePic.click();
@@ -119,24 +120,22 @@ public class SamplePageObj {
 
 	public void searchTopSpeciality() {
 		WebElement	element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText[@content-desc='SearchSym_searchbar_id']")));
-		String [] arrSpl = Helper.readExcelData(filePath, str);
-		for(String st : arrSpl) {		
-			element.sendKeys(st);	
-		}
+		element.sendKeys("General Practitioner");
+		
+//		String [] arrSpl = Helper.readExcelData(filePath, str);
+//		for(String st : arrSpl) {		
+//			element.sendKeys(st);	
+//		}
 	}
 
 	public void verifySearchResult() {
-		WebElement	element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text=\"General Practitioner\"]")));
+		WebElement	element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='General Practitioner']")));
 		if(element.isDisplayed()) {
 			System.out.println(element.getText());
 		}
-		try {
-			androidDriver.pressKey(new KeyEvent(AndroidKey.BACK));
-			androidDriver.pressKey(new KeyEvent(AndroidKey.BACK));
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}	
+		WebElement backBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='󰁍']")));
+		backBtn.click();		
+		backBtn.click();
 	}
 
 	public void searcParticularSpeciality() {
@@ -155,10 +154,23 @@ public class SamplePageObj {
 		
 		WebElement searchBarSpl = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText[@text='Search speciality']")));
 		searchBarSpl.clear();
-		String [] arrSpl = Helper.readExcelData(filePath, str);
-		for(String st : arrSpl) {		
-			searchBarSpl.sendKeys(st);	
-		}
+		searchBarSpl.sendKeys("ENT");
+//		String [] arrSpl = Helper.readExcelData(filePath, str);
+//		for(String st : arrSpl) {		
+//			searchBarSpl.sendKeys(st);	
+//		}
+		
+		androidDriver.findElement(By.xpath("//android.widget.TextView[@text='']")).click(); //
+		
+		//back button
+		
+		WebElement bckButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='󰁍']")));
+		bckButton.click();
+//		wait.until(ExpectedConditions.visibilityOf(bckButton));
+		Thread.sleep(3000);
+		WebElement backBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='󰁍']")));
+		backBtn.click();		
+		backBtn.click();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
